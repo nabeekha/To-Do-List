@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .min-h-screen-custom {
+        min-height: 100vh; /* fallback for browsers that don't support custom properties */
+        min-height: calc(100vh - env(safe-area-inset-bottom));
+    }
+}
+
+html, body {
+    height: 100%;
+}

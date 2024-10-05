@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./To-Do-List/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'palanquin-dark-regular': ['Palanquin Dark', 'sans-serif'],
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
