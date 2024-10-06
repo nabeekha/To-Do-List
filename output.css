@@ -2093,7 +2093,7 @@ html {
        column-gap: 1rem;
   row-gap: 2.5rem;
   font-size: 0.875rem;
-  line-height: 1rem;
+  line-height: 1.25rem;
 }
 
 .footer > * {
@@ -10256,6 +10256,11 @@ html:has(.drawer-open.drawer-open) {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+.sticky-footer {
+  position: sticky;
+  top: 100vh;
 }
 
 html, body {

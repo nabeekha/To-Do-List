@@ -1,6 +1,8 @@
 const taskInput = document.getElementById('new-task');
 const taskList = document.getElementById('task-list');
 const addTaskButton = document.getElementById('add-task');
+const todoToggle = document.getElementById('todo-toggle');
+const todoContainer = document.getElementById('todo-container');
 
 // Add task function
 function addTask(task) {
@@ -30,3 +32,11 @@ function removeTask(button) {
     const li = button.parentElement;
     taskList.removeChild(li);
 }
+
+// function for the task open container button
+todoToggle.addEventListener('click', function () {
+    todoContainer.classList.toggle('hidden');
+    todoToggle.textContent = todoContainer.classList.contains('hidden')
+        ? 'Add New Task ▼'
+        : 'Add New Task ▲';
+});
