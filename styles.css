@@ -21,10 +21,12 @@ h1 {
 
 .add-task-button {
     background-color: #4CAF50;
+    width: 100%;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -37,7 +39,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
     text-align: center;
     margin-top: 0%;
     position: fixed;
@@ -46,6 +48,19 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 10;
 }
+
+.todo-container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#todo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
 .main-content {
     display: flex;
@@ -97,3 +112,21 @@ li button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .todo-container {
+      position: static;
+      width: 80%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+  }
+  
+  /* Media query for screens smaller than 480px */
+  @media screen and (max-width: 480px) {
+    .todo-container {
+      width: 95%;
+      padding: 15px;
+    }
+  }
