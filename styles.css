@@ -2,3 +2,16 @@ footer {
     margin-bottom: 0px;
 }
 
+.back-button {
+    position: fixed;
+    margin-bottom: 0px;
+}
+
+.task-container {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+}
